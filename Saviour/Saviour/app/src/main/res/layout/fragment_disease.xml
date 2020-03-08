@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Disease">
+
+    <ImageView
+        android:id="@+id/selectimage"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="128dp"
+        android:background="@color/grey"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/uploadIV"
+        android:layout_width="216dp"
+        android:layout_height="216dp"
+        android:src="@mipmap/upload"
+        app:layout_constraintBottom_toTopOf="@+id/TV_select"
+        app:layout_constraintEnd_toEndOf="@+id/selectimage"
+        app:layout_constraintStart_toStartOf="@+id/selectimage"
+        app:layout_constraintTop_toTopOf="@+id/selectimage"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <TextView
+        android:id="@+id/clearbtn"
+        android:layout_width="65dp"
+        android:layout_height="31dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="Clear"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/selectimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="@android:string/search_go"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectimage"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <TextView
+        android:id="@+id/TV_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select an image of a leaf"
+        android:textColor="#4E4C4C"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/selectimage"
+        app:layout_constraintEnd_toEndOf="@+id/selectimage"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/selectimage"
+        app:layout_constraintTop_toTopOf="@+id/selectimage"
+        app:layout_constraintVertical_bias="0.846" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

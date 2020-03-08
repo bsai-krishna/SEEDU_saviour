@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Saviour</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">Weather Predictor</string>
+    <string name="tab_text_2">Disease Predictor</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="tab_text_a">Today</string>
+    <string name="tab_text_b">Next 5 Days</string>
+</resources>
